@@ -80,3 +80,10 @@ To create new txt file
 New-Item myfile.txt -ItemType File
 
 For index -----"index": "src/app/brilliant-edu/brilliant-edu.component.html",
+
+*********** For hosting the project
+1. Build the Angular Project
+ng build --configuration production
+Output location: D:\Projects\Brilliant-Edu\dist\brilliant-edu
+2.  Install angular-cli-ghpages
+npm install -g angular-cli-ghpages

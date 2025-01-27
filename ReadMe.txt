@@ -80,6 +80,7 @@ To create new txt file
 New-Item myfile.txt -ItemType File
 
 For index -----"index": "src/app/brilliant-edu/brilliant-edu.component.html",
+            "index": "src/index.html",
 
 *********** For hosting the project
 1. Build the Angular Project

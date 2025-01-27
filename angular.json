@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/brilliant-edu",
-            "index": "src/index.html",
+            "index": "src/app/brilliant-edu/brilliant-edu.component.html",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"

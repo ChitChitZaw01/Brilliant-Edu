@@ -15,6 +15,7 @@
           "options": {
             "outputPath": "dist/brilliant-edu",
             "index": "src/index.html",
+            "baseHref": "/Brilliant-Edu/",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"

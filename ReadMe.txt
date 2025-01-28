@@ -87,6 +87,9 @@ For index -----"index": "src/app/brilliant-edu/brilliant-edu.component.html",
 ng build --configuration production
 Output location: D:\Projects\Brilliant-Edu\dist\brilliant-edu
 2.  Install angular-cli-ghpages
+Option 1:
+ng add angular-cli-ghpages
+Option 2:
 npm install -g angular-cli-ghpages
 3. Deploy your project:
 ng deploy --base-href=/your-repo-name/

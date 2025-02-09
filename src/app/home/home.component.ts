@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { MatCard } from '@angular/material/card';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [MatCard],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

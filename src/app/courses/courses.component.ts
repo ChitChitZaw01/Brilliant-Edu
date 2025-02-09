@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
   styleUrl: './courses.component.css'
 })
 export class CoursesComponent {
-
 }

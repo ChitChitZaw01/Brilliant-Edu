@@ -1,74 +1,62 @@
+img {
+  width: 100%;
+  height: auto;
+}
 
-  .image-card {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  img {
-    width: 100%;
-    height: auto;
-  }
-  
-  
+.info-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  padding: 40px 20px;
+}
+
+.info-section {
+  width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.info-section:hover {
+  transform: translateY(-10px);
+}
+
+.info-section img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.info-section .text {
+  padding: 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.info-section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.info-section p {
+  font-size: 16px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
   .info-sections {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-evenly;
-    padding: 40px 20px;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .info-section {
-    width: 350px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
+    width: 80%;
   }
-  
-  .info-section:hover {
-    transform: translateY(-10px);
-  }
-  
-  .info-section img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-  }
-  
-  .info-section .text {
-    padding: 20px;
-    background-color: #f5f5f5;
-    text-align: center;
-  }
-  
-  .info-section h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
-  
-  .info-section p {
-    font-size: 16px;
-    color: #555;
-  }
-  
-  @media (max-width: 768px) {
-    .hero-content h1 {
-      font-size: 40px;
-    }
-  
-    .hero-content p {
-      font-size: 18px;
-    }
-  
-    .info-sections {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .info-section {
-      width: 80%;
-    }
-  }
-  
+}
+
+mat-card {
+  background: rgba(255, 255, 255, 0.7);
+  /* Optional: adds a translucent white background to the card */
+}

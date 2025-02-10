@@ -1,3 +1,61 @@
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.home-container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.image-column img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-column {
+  flex: 1;
+}
+
+.text-column2 {
+  flex: 1;
+  /* background-color: #bbdefb; */
+}
+
+.text-column h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.text-column p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.text-column button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.text-column button:hover {
+  background-color: #0056b3;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -54,9 +112,4 @@ img {
   .info-section {
     width: 80%;
   }
-}
-
-mat-card {
-  background: rgba(255, 255, 255, 0.7);
-  /* Optional: adds a translucent white background to the card */
 }

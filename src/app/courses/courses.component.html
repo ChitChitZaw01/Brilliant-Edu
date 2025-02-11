@@ -7,33 +7,16 @@
     <li>English Literature</li>
   </ul>
 </div>
-<div class="home-container">
-  <div class="image-column">
-    <img src="images/eng.jpg" alt="Home Image" />
-  </div>
-  <div class="text-column">
-    <h1>Welcome to Our Home Page</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-      tincidunt, mauris non cursus euismod, tortor purus tincidunt sapien,
-      vitae posuere tortor risus a magna. Integer nec enim eu nulla luctus
-      placerat.
-    </p>
-  </div>
- </div>
 
- <div class="home-container">
-  <div class="image-column">
-    <img src="images/jp2.jpg" alt="Home Image" />
+<mat-card *ngFor="let product of products" class="product-card">
+  <div class="product-details">
+    <img matCardImage [src]="product.image" alt="{{ product.name }}" class="product-image">
+    <div class="product-info">
+      <h3>{{ product.name }}</h3>
+      <p class="description">{{ product.description }}</p>
+      <span class="price">{{ product.price }}</span>
+    </div>
   </div>
-  <div class="text-column">
-    <h1>Welcome to Our Home Page</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-      tincidunt, mauris non cursus euismod, tortor purus tincidunt sapien,
-      vitae posuere tortor risus a magna. Integer nec enim eu nulla luctus
-      placerat.
-    </p>
-  </div>
- </div>
+</mat-card>
+
 <app-footer></app-footer>

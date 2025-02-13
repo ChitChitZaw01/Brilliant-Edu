@@ -1,6 +1,13 @@
-mat-toolbar {
-    background-color: #82b1ff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+/* footer.component.css */
+.foot {
+  background-color: #82b1ff;
+  color: #1a237e;
+  padding: 10px 0;
+  text-align: left;
+  display: flex;
+
+}
+
+p {
+  margin-left: 10px;
+}

@@ -70,3 +70,21 @@ mat-toolbar {
   z-index: 2;
 }
 
+/* last updat */
+.desktop-menu {
+  display: flex;
+  justify-content: space-around;
+  /* width: 100%; */
+}
+
+.sidenav-container {
+  display: flex;
+  height: 100vh;
+}
+
+@media (max-width: 600px) {
+  .desktop-menu {
+    display: none;
+  }
+}
+

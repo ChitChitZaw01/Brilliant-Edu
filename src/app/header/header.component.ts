@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+// import { Component } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
@@ -9,6 +9,15 @@ import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatDialogModule } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+
+import { MatSidenav  } from '@angular/material/sidenav';
+
+
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { Component, OnInit, ViewChild} from '@angular/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
@@ -21,13 +30,28 @@ import { Router } from '@angular/router';
     MatSidenavModule,
     MatListModule,
     MatDividerModule,
-    MatDialogModule
+    MatDialogModule,
+    CommonModule
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
-  constructor(private router: Router) {}
+export class HeaderComponent implements OnInit  {
+  @ViewChild('sidenav', { static: false }) sidenav: MatSidenav  | undefined;
+  constructor(private router: Router,
+    private breakpointObserver: BreakpointObserver
+  ) {}
+  isMobile: boolean = false;
+
+  // constructor(private breakpointObserver: BreakpointObserver) {}
+
+  ngOnInit() {
+    this.breakpointObserver
+      .observe([Breakpoints.Handset])
+      .subscribe((result) => {
+        this.isMobile = result.matches;
+      });
+  }
   goToHome() {
     // Trigger any logic before navigating
     console.log('Navigating to Home page...');
@@ -50,5 +74,15 @@ export class HeaderComponent {
     console.log('Navigating to contact page...');
     this.router.navigate(['/contact']);  // Programmatically navigate
   }
+
+  title = 'responsive-hamburger-menu';
+
+  // Toggle sidebar using ViewChild reference
+  toggleSidebar() {
+    if (this.sidenav) {
+      this.sidenav.toggle();
+    }
+  }
+
 
 }

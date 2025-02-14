@@ -4,6 +4,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
+
+import { MatListModule } from '@angular/material/list';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatDialogModule } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 
 
@@ -14,7 +18,10 @@ import { Router } from '@angular/router';
     MatButtonModule,
     MatMenuModule,
     MatIconModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatListModule,
+    MatDividerModule,
+    MatDialogModule
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'

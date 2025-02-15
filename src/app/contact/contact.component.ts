@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MatFormFieldModule } from '@angular/material/form-field'; 
-import { MatInputModule } from '@angular/material/input'; 
-import { CommonModule } from '@angular/common'; 
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { CommonModule } from '@angular/common';
 import { FooterComponent } from '../footer/footer.component';
 
 @Component({
@@ -61,4 +61,4 @@ export class ContactComponent {
   resetForm() {
     this.model = { name: '', email: '', message: '' };
   }
-  }
+}

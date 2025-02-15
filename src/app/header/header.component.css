@@ -12,16 +12,18 @@
 }
 
 .logo {
-  height: 40px; /* Adjust logo size */
+  height: 40px;
+  /* Adjust logo size */
   max-width: 100%;
   object-fit: contain;
 }
 
 .title {
   /* font-size: 20px; */
-  font-size: 1.7rem; 
+  font-size: 1.7rem;
   font-weight: bold;
   margin-left: 10px;
+  color: #0f3657;
 }
 
 .spacer {
@@ -37,9 +39,11 @@ mat-icon {
   .logo {
     height: 30px;
   }
+
   .title {
     font-size: 16px;
   }
+
   mat-icon {
     font-size: 28px;
   }
@@ -53,7 +57,7 @@ mat-button.custom-button {
   font-size: 100px;
   /* Adjust font size */
 }
- 
+
 /* Updated */
 .example-container {
   height: 100%;
@@ -93,12 +97,13 @@ mat-toolbar {
 
 @media (min-width: 1024px) {
   .mobile-menu {
-    display: none;  /* Hides the element and removes it from the layout */
-    height: 0;      /* Ensures the height is removed (this is optional since display: none should do the job) */
-    padding: 0;     /* Reset padding to ensure no space is taken */
-    margin: 0;      /* Reset margin if necessary */
+    display: none;
+    /* Hides the element and removes it from the layout */
+    height: 0;
+    /* Ensures the height is removed (this is optional since display: none should do the job) */
+    padding: 0;
+    /* Reset padding to ensure no space is taken */
+    margin: 0;
+    /* Reset margin if necessary */
   }
 }
-
-
-

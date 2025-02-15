@@ -10,12 +10,12 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatDialogModule } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 
-import { MatSidenav  } from '@angular/material/sidenav';
+import { MatSidenav } from '@angular/material/sidenav';
 
 
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { Component, OnInit, ViewChild} from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { CommonModule } from '@angular/common';
 
@@ -23,7 +23,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-header',
   imports: [
-    MatToolbarModule, 
+    MatToolbarModule,
     MatButtonModule,
     MatMenuModule,
     MatIconModule,
@@ -36,11 +36,11 @@ import { CommonModule } from '@angular/common';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent implements OnInit  {
-  @ViewChild('sidenav', { static: false }) sidenav: MatSidenav  | undefined;
+export class HeaderComponent implements OnInit {
+  @ViewChild('sidenav', { static: false }) sidenav: MatSidenav | undefined;
   constructor(private router: Router,
     private breakpointObserver: BreakpointObserver
-  ) {}
+  ) { }
   isMobile: boolean = false;
 
   // constructor(private breakpointObserver: BreakpointObserver) {}
@@ -62,13 +62,13 @@ export class HeaderComponent implements OnInit  {
     console.log('Navigating to About Us page...');
     this.router.navigate(['/about']);  // Programmatically navigate
   }
-  
+
   goToCourses() {
     // Trigger any logic before navigating
     console.log('Navigating to courses page...');
     this.router.navigate(['/courses']);  // Programmatically navigate
   }
-  
+
   goToCotact() {
     // Trigger any logic before navigating
     console.log('Navigating to contact page...');

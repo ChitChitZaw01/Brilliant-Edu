@@ -102,6 +102,27 @@ img {
   color: #555;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  /* Stack elements vertically */
+  /* justify-content: space-between; */
+  /* height: 100vh;  */
+  padding: 20px;
+}
+
+.top-section,
+.bottom-section {
+  flex: 1;
+  /* Both sections will take equal space */
+  /* padding: 10px; */
+}
+
+.justified-text {
+  text-align: justify;
+  line-height: 1.6;
+}
+
 @media (max-width: 768px) {
 
   .info-sections,
@@ -112,5 +133,22 @@ img {
 
   .info-section {
     width: 80%;
+  }
+
+  .container {
+    padding: 10px;
+    /* Reduce padding for smaller screens */
+  }
+
+  .top-section,
+  .bottom-section {
+    flex: none;
+    /* Sections will now only take their content height */
+    padding: 15px;
+    /* Optional: adjust padding */
+  }
+
+  .justified-text {
+    text-align: justify;
   }
 }

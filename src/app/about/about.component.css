@@ -96,6 +96,11 @@ img {
   color: #555;
 }
 
+.justified-text {
+  text-align: justify;
+  line-height: 1.6;
+}
+
 @media (max-width: 768px) {
   .info-sections {
     flex-direction: column;
@@ -113,5 +118,9 @@ img {
 
   .home-container {
     width: 80%;
+  }
+
+  .justified-text {
+    text-align: justify;
   }
 }

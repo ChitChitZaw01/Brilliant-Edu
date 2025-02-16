@@ -12,7 +12,7 @@
 }
 
 .logo {
-  height: 40px;
+  height: 90px;
   /* Adjust logo size */
   max-width: 100%;
   object-fit: contain;
@@ -20,7 +20,7 @@
 
 .title {
   /* font-size: 20px; */
-  font-size: 1.7rem;
+  font-size: 2.7rem;
   font-weight: bold;
   margin-left: 10px;
   color: #0f3657;
@@ -37,11 +37,11 @@ mat-icon {
 /* Responsive styles for small screens */
 @media (max-width: 600px) {
   .logo {
-    height: 30px;
+    height: 60px;
   }
 
   .title {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   mat-icon {

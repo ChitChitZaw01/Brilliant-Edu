@@ -81,7 +81,7 @@ ng serve
 6. Start Coding
 The default project will have a basic structure. You can start editing the components, services, and other files within the src/app folder.
 
-**********Git work flow
+## Git work flow
 1. Navigate to your project folder:
 cd path/to/your/project
 2. Initialize the Git repository:
@@ -118,16 +118,16 @@ After pushing your code, go to your GitHub repository URL. You should now see al
 # Node.js dependencies
 node_modules/
 
-# Logs
+## Logs
 npm-debug.log
 yarn-debug.log
 yarn-error.log
 
-# IDE files
+## IDE files
 .idea/
 .vscode/
 
-# Build output
+## Build output
 dist/
 
 3-Stage and commit the .gitignore:
@@ -169,3 +169,8 @@ cd dist/brilliant-edu/
 ```bash
 git add -f dist/brilliant-edu/CNAME
 ```
+## For custom domanin hosting
+-From the dashboard, click on "My Products" in the top-right corner
+-Find your domain in the list and click "DNS" (or "Manage DNS") next to the domain you want to configure.
+-Scroll down to the DNS Records section.
+-Click on the "Add" button to create a new record.

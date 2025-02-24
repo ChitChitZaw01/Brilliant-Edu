@@ -71,6 +71,11 @@
   color: #1e88e5;
 }
 
+.text-column h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
 .text-column p {
   font-size: 2rem;
   color: #333;

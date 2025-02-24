@@ -36,7 +36,7 @@ export class ContactComponent {
 
   submitForm(formData: any) {
     // Show an alert before form submission (optional, for confirmation)
-    if (confirm('Are you sure you want to submit the form?')) {
+    if (confirm('Are you sure you want to submit the message?')) {
       const url = 'https://formsubmit.co/ajax/chitchitzaw.as16@gmail.com';
       const headers = new Headers({
         'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ export class ContactComponent {
             this.resetForm();
   
             // Show success alert after submission
-            alert('Form submitted successfully!');
+            alert('The message is submitted successfully!');
           } else {
             console.error('Error submitting form:', response);
           }

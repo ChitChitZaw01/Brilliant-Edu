@@ -35,28 +35,36 @@ export class ContactComponent {
   }
 
   submitForm(formData: any) {
-    const url = 'https://formsubmit.co/ajax/chitchitzaw.as16@gmail.com';
-    const headers = new Headers({
-      'Content-Type': 'application/json',
-    });
-
-    fetch(url, {
-      method: 'POST',
-      body: JSON.stringify(formData),
-      headers: headers,
-    })
-      .then((response) => {
-        if (response.ok) {
-          this.isSubmitted = true;
-          this.resetForm();
-        } else {
-          console.error('Error submitting form:', response);
-        }
-      })
-      .catch((error) => {
-        console.error('Error submitting form:', error);
+    // Show an alert before form submission (optional, for confirmation)
+    if (confirm('Are you sure you want to submit the form?')) {
+      const url = 'https://formsubmit.co/ajax/chitchitzaw.as16@gmail.com';
+      const headers = new Headers({
+        'Content-Type': 'application/json',
       });
+  
+      fetch(url, {
+        method: 'POST',
+        body: JSON.stringify(formData),
+        headers: headers,
+      })
+        .then((response) => {
+          if (response.ok) {
+            this.isSubmitted = true;
+            this.resetForm();
+  
+            // Show success alert after submission
+            alert('Form submitted successfully!');
+          } else {
+            console.error('Error submitting form:', response);
+          }
+        })
+        .catch((error) => {
+          console.error('Error submitting form:', error);
+          alert('There was an error submitting the form. Please try again later.');
+        });
+    }
   }
+  
 
   resetForm() {
     this.model = { name: '', email: '', message: '' };
